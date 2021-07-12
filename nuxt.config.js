@@ -24,6 +24,7 @@ export default {
     '~/assets/css/main.scss'
   ],
 
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -40,7 +41,7 @@ export default {
   ],
   stylelint: {
     /* module options */
-    disallowInList:true
+    disallowInList: false
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,6 +49,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

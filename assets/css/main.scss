@@ -1,9 +1,10 @@
 @import "assets/css/libs/font";
 @import "assets/css/components/main-nav";
 @import "assets/css/components/portfolio";
+
 /* stylelint-disable */
 
-$black:#110631;
+$black: #0f0426;
 
 body {
   background-color: $black;
@@ -22,7 +23,6 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
 }
 
 
@@ -43,7 +43,6 @@ blockquote, q{
 }
 
 blockquote::before, blockquote::after, q::before, q::after{
-  content: '';
   content: none;
 }
 
@@ -56,3 +55,4 @@ input{
   -webkit-appearance: none;
   border-radius: 0;
 }
+
