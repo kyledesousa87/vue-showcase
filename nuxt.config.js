@@ -57,5 +57,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    // change to false, or remove this config.
+    components: false
   }
 }

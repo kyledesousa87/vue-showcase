@@ -1,0 +1,15 @@
+.k-logo {
+		display: block;
+		z-index: 99999;
+		width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 45px;
+    top: 25px;
+
+		&__circ-top,&__circ-bot,&__arrow {
+			fill: $shock-green;
+		}
+
+
+}

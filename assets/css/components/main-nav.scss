@@ -4,5 +4,61 @@ $link-colour-g:#ACACAC;
 
 .main-nav {
   margin: 0 0 0 25px;
-  padding: 0;
+  height: 100vh;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  justify-content: center;
+  left: 0;
+  padding: 100px 0 0 0;
+
+}
+.main-nav-item {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    font-size: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 25px 25px;
+    transition: all ease-in-out 0.2s;
+    border-left:3px solid transparent;
+    text-decoration: none;
+    color: $shock-green;
+    .main-nav-item_hed {
+      font-family: $font-fam-hed;
+      color: $shock-green;
+      text-transform: uppercase;
+    }
+
+    span {
+      color: white;
+      font-family: $font-fam-small;
+      display: flex;
+      flex-flow: column nowrap;
+      font-size: 0.55em;
+      padding: 10px 0 0 0;
+    }
+    &:hover {
+      padding: 25px 25px 25px 35px;
+      border-left:3px solid $shock-green;
+
+      .main-nav-item_hed{
+        -webkit-animation: glow 1s ease-in-out alternate;
+        -moz-animation: glow 1s ease-in-out alternate;
+        animation: glow 1s ease-in-out alternate;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  }
+  to {
+    text-shadow: 0 0 20px transparent, 0 0 20px $shock-green, 0 0 20px $shock-green, 0 0 20px $shock-green;
+  }
 }
